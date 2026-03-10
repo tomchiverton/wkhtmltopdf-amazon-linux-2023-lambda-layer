@@ -82,6 +82,12 @@ mkdir -p /output
 cd /package
 zip -r /output/layer.zip .
 
-echo "Done! The layer ZIP is at /output/layer.zip"
-echo "Check its contents with: unzip -l /output/layer.zip"
+rm bin/wkhtmltopdf
+zip -r /output/layer-image-only.zip .
+
+cp /usr/local/bin/wkhtmltopdf /package/bin/
+zip -r /output/layer-pdf-only.zip .
+
+echo "Done! The layer ZIPs are at /output/"
+echo "You can check its contents with: unzip -t /output/layer.zip"
 exit 0
