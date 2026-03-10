@@ -31,7 +31,7 @@ echo "Creating staging directories..."
 mkdir -p /package/bin /package/lib /package/fonts
 
 echo "Copying wkhtmltopdf binary..."
-cp /usr/local/bin/wkhtmltopdf /package/bin/
+cp /usr/local/bin/wkhtmlto* /package/bin/
 
 wget https://www.openssl.org/source/openssl-1.1.1u.tar.gz
 tar -xzf openssl-1.1.1u.tar.gz
