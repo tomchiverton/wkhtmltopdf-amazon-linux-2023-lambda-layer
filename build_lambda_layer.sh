@@ -85,6 +85,7 @@ zip -r /output/layer.zip .
 rm bin/wkhtmltopdf
 zip -r /output/layer-image-only.zip .
 
+rm bin/wkhtmltoimage
 cp /usr/local/bin/wkhtmltopdf /package/bin/
 zip -r /output/layer-pdf-only.zip .
 
